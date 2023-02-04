@@ -2,6 +2,7 @@
 #cards_landscape_wrap-2 {
   text-align: center;
   background: #292121;
+  background-image: linear-gradient(to bottom right, #404448, #212429);
 }
 #cards_landscape_wrap-2 .container {
   padding-top: 10px;
