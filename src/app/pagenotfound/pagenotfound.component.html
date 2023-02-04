@@ -1,9 +1,26 @@
-<div id="main">
-  <div class="fof">
-    <h1>Error 404</h1>
-  </div>
-</div>
-<ul>
-<li *ngFor="let item of num">
-  {{ item }} </li>
-</ul>
+<html>
+  <body>
+    <br />
+    <br />
+    <br />
+    <div id="main">
+      <div class="fof">
+        <h1>Error 404</h1>
+      </div>
+    </div>
+    <div class="directives">
+      <!--ngIf-->
+      <div class="showElement">
+        <ng-template [ngIf]="showElement">
+          <p>Sorry, we couldn't find this page.</p>
+        </ng-template>
+      </div>
+      <!--ngFor-->
+      <div class="ngFor">
+        <p *ngFor="let item of message">
+          {{ message }}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -7,4 +7,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Shem Baytan ';
+
+  //Two-way data binding
+  yourName = '';
+
+  //ngStyle
+  style = 'style';
 }

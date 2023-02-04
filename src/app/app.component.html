@@ -1,6 +1,11 @@
 <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
   <div class="container-fluid">
     <ul class="navbar-nav">
+      <li class="ngmodel">
+        <div>
+          <input [(ngModel)]="yourName" placeholder="Enter your name" />
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="home">Home</a>
       </li>
@@ -21,6 +26,11 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="pagenotfound">Click!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="pagenotfound" [class]="style"
+          >Hello, {{ yourName }}</a
+        >
       </li>
     </ul>
   </div>
