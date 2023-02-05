@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'education', component: EducationComponent },
@@ -38,5 +38,6 @@ const routes: Routes = [
     PagenotfoundComponent,
   ],
   bootstrap: [AppComponent],
+  exports: [RouterModule],
 })
 export class AppModule {}
